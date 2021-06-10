@@ -6,28 +6,35 @@
 //
 
 import SwiftUI
+import CoreData
+
 
 struct ContentView: View {
+    
+    @EnvironmentObject var modelData: ModelData
+
     var body: some View {
-        VStack {
+        ScrollView {
             VStack(alignment:.leading) {
                 Text("Your Mood")
                     .font(.title)
                     .fontWeight(.medium)
+                    .padding()
+                
+                GraphView(modelData: modelData)
+                
                     
                 HStack {
                     Spacer()
-                        
                 }
                 .font(.subheadline)
             }
-            .padding()
+            .padding(.bottom, 260)
             
-            Chart()
             
-            Divider()
             
             VStack(alignment:.center) {
+                
                 Text("How are you feeling?")
                     .font(.title2)
                     .fontWeight(.medium)
@@ -40,21 +47,21 @@ struct ContentView: View {
                 }
                 .font(.subheadline)
                 
+                Divider()
+                
+                MoodSurvey(modelData: modelData)
+                
             }
             .padding()
             
-            Divider()
             
-            MoodSurvey()
+            
             
             Spacer()
             
             
             
         }
-        
-        
-        
         
         
             
@@ -65,5 +72,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .environmentObject(ModelData())
     }
 }

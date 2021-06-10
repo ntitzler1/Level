@@ -6,12 +6,13 @@
 //
 
 import SwiftUI
+import Charts
 
 struct Chart: View {
     var body: some View {
-        Image("graph")
-            .resizable()
-            .aspectRatio(contentMode: .fit)
+        Chart(data: [0.1, 0.3, 0.2, 0.5, 0.4, 0.9, 0.1])
+                    .chartStyle(
+                        LineChartStyle(.quadCurve, lineColor: .blue, lineWidth: 5))
         
     }
 }

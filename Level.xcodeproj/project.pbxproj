@@ -3,18 +3,26 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF7462B52654719E001A89F0 /* slideInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7462B42654719E001A89F0 /* slideInput.swift */; };
+		CF7462B72654762D001A89F0 /* SurveyResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7462B62654762D001A89F0 /* SurveyResults.swift */; };
+		CF7462BB2654802D001A89F0 /* Graphs.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7462BA2654802D001A89F0 /* Graphs.swift */; };
+		CF7462C2265481AB001A89F0 /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7462C1265481AB001A89F0 /* GraphView.swift */; };
+		CF7462C5265482EC001A89F0 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = CF7462C4265482EC001A89F0 /* SwiftUICharts */; };
+		CF7462C92654B26C001A89F0 /* radioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7462C82654B26C001A89F0 /* radioButton.swift */; };
+		CF7462CC2654C2BB001A89F0 /* LevelModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CF7462CA2654C2BB001A89F0 /* LevelModel.xcdatamodeld */; };
+		CF74630A2654F4AB001A89F0 /* GraphsAndCharts.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7463092654F4AB001A89F0 /* GraphsAndCharts.swift */; };
 		CFA26EEC2646011A002CBDC8 /* LevelApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA26EEB2646011A002CBDC8 /* LevelApp.swift */; };
 		CFA26EEE2646011A002CBDC8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA26EED2646011A002CBDC8 /* ContentView.swift */; };
 		CFA26EF026460120002CBDC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFA26EEF26460120002CBDC8 /* Assets.xcassets */; };
 		CFA26EF326460120002CBDC8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFA26EF226460120002CBDC8 /* Preview Assets.xcassets */; };
 		CFA26EFE26460121002CBDC8 /* LevelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA26EFD26460121002CBDC8 /* LevelTests.swift */; };
 		CFA26F0926460121002CBDC8 /* LevelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA26F0826460121002CBDC8 /* LevelUITests.swift */; };
-		CFA26F1926460671002CBDC8 /* Chart.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA26F1826460671002CBDC8 /* Chart.swift */; };
 		CFA26F1B264609F1002CBDC8 /* MoodSurvey.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA26F1A264609F1002CBDC8 /* MoodSurvey.swift */; };
+		CFA26F1D2646248E002CBDC8 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFA26F1C2646248E002CBDC8 /* Storyboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +43,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CF7462B42654719E001A89F0 /* slideInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = slideInput.swift; sourceTree = "<group>"; };
+		CF7462B62654762D001A89F0 /* SurveyResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyResults.swift; sourceTree = "<group>"; };
+		CF7462BA2654802D001A89F0 /* Graphs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graphs.swift; sourceTree = "<group>"; };
+		CF7462C1265481AB001A89F0 /* GraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
+		CF7462C82654B26C001A89F0 /* radioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = radioButton.swift; sourceTree = "<group>"; };
+		CF7462CB2654C2BB001A89F0 /* LevelModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LevelModel.xcdatamodel; sourceTree = "<group>"; };
+		CF7463092654F4AB001A89F0 /* GraphsAndCharts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphsAndCharts.swift; sourceTree = "<group>"; };
 		CFA26EE82646011A002CBDC8 /* Level.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Level.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFA26EEB2646011A002CBDC8 /* LevelApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelApp.swift; sourceTree = "<group>"; };
 		CFA26EED2646011A002CBDC8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -47,8 +62,8 @@
 		CFA26F0426460121002CBDC8 /* LevelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LevelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFA26F0826460121002CBDC8 /* LevelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelUITests.swift; sourceTree = "<group>"; };
 		CFA26F0A26460121002CBDC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CFA26F1826460671002CBDC8 /* Chart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chart.swift; sourceTree = "<group>"; };
 		CFA26F1A264609F1002CBDC8 /* MoodSurvey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodSurvey.swift; sourceTree = "<group>"; };
+		CFA26F1C2646248E002CBDC8 /* Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF7462C5265482EC001A89F0 /* SwiftUICharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +92,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CF7462B9265476B8001A89F0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CF7462B62654762D001A89F0 /* SurveyResults.swift */,
+				CF7462BA2654802D001A89F0 /* Graphs.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CF7462C72654B245001A89F0 /* Survey */ = {
+			isa = PBXGroup;
+			children = (
+				CFA26F1A264609F1002CBDC8 /* MoodSurvey.swift */,
+				CF7462B42654719E001A89F0 /* slideInput.swift */,
+				CF7462C82654B26C001A89F0 /* radioButton.swift */,
+			);
+			path = Survey;
+			sourceTree = "<group>";
+		};
 		CFA26EDF2646011A002CBDC8 = {
 			isa = PBXGroup;
 			children = (
@@ -101,11 +136,15 @@
 			children = (
 				CFA26EEB2646011A002CBDC8 /* LevelApp.swift */,
 				CFA26EED2646011A002CBDC8 /* ContentView.swift */,
-				CFA26F1A264609F1002CBDC8 /* MoodSurvey.swift */,
-				CFA26F1826460671002CBDC8 /* Chart.swift */,
+				CF7462C1265481AB001A89F0 /* GraphView.swift */,
+				CF7463092654F4AB001A89F0 /* GraphsAndCharts.swift */,
+				CF7462C72654B245001A89F0 /* Survey */,
+				CF7462B9265476B8001A89F0 /* Models */,
 				CFA26EEF26460120002CBDC8 /* Assets.xcassets */,
 				CFA26EF426460120002CBDC8 /* Info.plist */,
 				CFA26EF126460120002CBDC8 /* Preview Content */,
+				CFA26F1C2646248E002CBDC8 /* Storyboard.storyboard */,
+				CF7462CA2654C2BB001A89F0 /* LevelModel.xcdatamodeld */,
 			);
 			path = Level;
 			sourceTree = "<group>";
@@ -152,6 +191,9 @@
 			dependencies = (
 			);
 			name = Level;
+			packageProductDependencies = (
+				CF7462C4265482EC001A89F0 /* SwiftUICharts */,
+			);
 			productName = Level;
 			productReference = CFA26EE82646011A002CBDC8 /* Level.app */;
 			productType = "com.apple.product-type.application";
@@ -223,6 +265,9 @@
 				Base,
 			);
 			mainGroup = CFA26EDF2646011A002CBDC8;
+			packageReferences = (
+				CF7462C3265482EC001A89F0 /* XCRemoteSwiftPackageReference "ChartView" */,
+			);
 			productRefGroup = CFA26EE92646011A002CBDC8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -241,6 +286,7 @@
 			files = (
 				CFA26EF326460120002CBDC8 /* Preview Assets.xcassets in Resources */,
 				CFA26EF026460120002CBDC8 /* Assets.xcassets in Resources */,
+				CFA26F1D2646248E002CBDC8 /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,9 +312,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFA26F1B264609F1002CBDC8 /* MoodSurvey.swift in Sources */,
+				CF74630A2654F4AB001A89F0 /* GraphsAndCharts.swift in Sources */,
+				CF7462BB2654802D001A89F0 /* Graphs.swift in Sources */,
+				CF7462C2265481AB001A89F0 /* GraphView.swift in Sources */,
 				CFA26EEE2646011A002CBDC8 /* ContentView.swift in Sources */,
+				CF7462B52654719E001A89F0 /* slideInput.swift in Sources */,
 				CFA26EEC2646011A002CBDC8 /* LevelApp.swift in Sources */,
-				CFA26F1926460671002CBDC8 /* Chart.swift in Sources */,
+				CF7462B72654762D001A89F0 /* SurveyResults.swift in Sources */,
+				CF7462C92654B26C001A89F0 /* radioButton.swift in Sources */,
+				CF7462CC2654C2BB001A89F0 /* LevelModel.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -588,6 +640,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CF7462C3265482EC001A89F0 /* XCRemoteSwiftPackageReference "ChartView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppPear/ChartView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CF7462C4265482EC001A89F0 /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CF7462C3265482EC001A89F0 /* XCRemoteSwiftPackageReference "ChartView" */;
+			productName = SwiftUICharts;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		CF7462CA2654C2BB001A89F0 /* LevelModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CF7462CB2654C2BB001A89F0 /* LevelModel.xcdatamodel */,
+			);
+			currentVersion = CF7462CB2654C2BB001A89F0 /* LevelModel.xcdatamodel */;
+			path = LevelModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = CFA26EE02646011A002CBDC8 /* Project object */;
 }

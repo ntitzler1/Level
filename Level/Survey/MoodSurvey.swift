@@ -8,7 +8,11 @@
 import SwiftUI
 
 struct MoodSurvey: View {
+    
+    var modelData: ModelData
+    
     var body: some View {
+        
         VStack {
             VStack(alignment:.leading) {
                 Text("Mood")
@@ -16,11 +20,10 @@ struct MoodSurvey: View {
                     .fontWeight(.medium)
                     
                 HStack {
+                    Text("Extremely poor - Extremely good")
                     Spacer()
-                }
-                Image("graph")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
+                }.font(.subheadline)
+                slideInput(modelData: modelData.mood_data)
                 
             }
             .padding()
@@ -33,11 +36,10 @@ struct MoodSurvey: View {
                     .fontWeight(.medium)
                     
                 HStack {
+                    Text("Extremely stressed - Highly calm")
                     Spacer()
-                }
-                Image("bubbles")
-                    .resizable(resizingMode: .stretch)
-                    .aspectRatio(contentMode: .fit)
+                }.font(.subheadline)
+                slideInput(modelData: modelData.mood_data)
             }
             .padding()
             
@@ -49,11 +51,24 @@ struct MoodSurvey: View {
                     .fontWeight(.medium)
                     
                 HStack {
+                    Text("Extremely distracted - Extremely focused")
                     Spacer()
-                }
-                Image("bubbles")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
+                }.font(.subheadline)
+                slideInput(modelData: modelData.mood_data)
+                
+            }
+            .padding()
+            Divider()
+            
+            VStack(alignment:.leading) {
+                Text("Did you take your meds?")
+                    .font(.title)
+                    .fontWeight(.medium)
+                    
+                HStack {
+                    Spacer()
+                }.font(.subheadline)
+                
                 
             }
             .padding()
@@ -65,6 +80,6 @@ struct MoodSurvey: View {
 
 struct MoodSurvey_Previews: PreviewProvider {
     static var previews: some View {
-        MoodSurvey()
+        MoodSurvey(modelData: ModelData())
     }
 }
